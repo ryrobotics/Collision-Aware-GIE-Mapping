@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<launch>
+    <param name="use_sim_time" value="true"/>
+    <param name="data_case" value="laser3D"/>
+    <node pkg="GIE" type="GIE_node" name="GIE_mapping" output="screen" >
+        <rosparam command="load" file="$(find GIE)/cfg/ctmav_3D_params_sitl.yaml" />
+        <rosparam command="load" file="$(find GIE)/cfg/ext_obsv.yaml" />
+        <remap from="/odom" to ="/iris_0/mavros/local_position/odom"/>
+        <remap from="/velodyne_points" to ="/iris_0/velodyne_points"/>
+        <remap from="/edt_map" to ="/iris_0/edt_map"/>
+        <remap from="/cost_map" to ="/iris_0/cost_map"/>
+    </node>
+
+    <node pkg="tf" type="static_transform_publisher" name="world_broadcaster" args="0 0 0 0 0 0 map world 100" />
+    <node name="rvizvisualisation" pkg="rviz" type="rviz" output="log" args="-d $(find GIE)/cfg/ctmav_3D_sitl.rviz" />
+</launch>
+
