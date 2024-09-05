@@ -17,24 +17,24 @@ The supplementary video can be viewed here:
 Please cite at least one of our papers if you use this project in your research:
 
 ```
-@misc{wang2023air,
-    title={Air Bumper: A Collision Detection and Reaction Framework for Autonomous MAV Navigation}, 
-    author={Ruoyu Wang and Zixuan Guo and Yizhou Chen and Xinyi Wang and Ben M. Chen},
-    year={2023},
-    eprint={2307.06101},
-    archivePrefix={arXiv},
-    primaryClass={cs.RO}}
+@inproceedings{wang2024air,
+  title={Air Bumper: A Collision Detection and Reaction Framework for Autonomous MAV Navigation},
+  author={Wang, Ruoyu and Guo, Zixuan and Chen, Yizhou and Wang, Xinyi and Chen, Ben M},
+  booktitle={2024 IEEE International Conference on Robotics and Automation (ICRA)},
+  pages={15735--15741},
+  year={2024},
+  organization={IEEE}}
 ```
 ```
-@article{chen2022gie,
-    author={Chen, Yizhou and Lai, Shupeng and Cui, Jinqiang and Wang, Biao and Chen, Ben M.},
-    journal={IEEE Robotics and Automation Letters}, 
-    title={GPU-Accelerated Incremental Euclidean Distance Transform for Online Motion Planning of Mobile Robots}, 
-    year={2022},
-    volume={7},
-    number={3},
-    pages={6894-6901},
-    doi={10.1109/LRA.2022.3177852}}
+@article{chen2022gpu,
+  title={GPU-accelerated incremental Euclidean distance transform for online motion planning of mobile robots},
+  author={Chen, Yizhou and Lai, Shupeng and Cui, Jinqiang and Wang, Biao and Chen, Ben M},
+  journal={IEEE Robotics and Automation Letters},
+  volume={7},
+  number={3},
+  pages={6894--6901},
+  year={2022},
+  publisher={IEEE}}
  ````
 
 ## 0. Supported data input:
